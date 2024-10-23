@@ -118,4 +118,4 @@ def ans_tg():
     return ('', 204)
 
 if __name__ == "__main__":
-    app.run(debug=True, port=5087)
+    app.run(debug=True, host='0.0.0.0', port=5087)
