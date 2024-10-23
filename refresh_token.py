@@ -31,6 +31,7 @@ def get_token():
             'url': f'{site_url}/ans'
         }
         answer = requests.post(avito_hook_url, headers=headers, data=json.dumps(url_params))
+        print(answer)
     except Exception:
         print(Exception)
 

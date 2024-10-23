@@ -21,6 +21,10 @@ app = Flask(__name__)
 # author_id = 0
 # text = ''
 
+@app.route("/")
+def hello():
+    return 'Hello'
+
 @app.route("/check/<check_str>")
 def set_webhook(check_str):
     env_path = './.env'

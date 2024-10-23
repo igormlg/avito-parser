@@ -3,3 +3,5 @@ token.yml
 test.yml
 test.py
 Dockerfile
+avitoenv/
+__pycache__/
