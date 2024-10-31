@@ -17,8 +17,9 @@ def get_token():
         token = data['access_token']
         
         to_yaml = {'token': token}
+        token_path = os.path.abspath("token.yml")
 
-        with open('token.yml', 'w') as f:
+        with open(token_path, 'w') as f:
             yaml.dump(to_yaml, f)
 
         headers = {

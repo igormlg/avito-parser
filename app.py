@@ -46,7 +46,7 @@ def ans_avito():
     if request.method == 'POST':
 
         data = request.json
-        # print(data)
+        print(data)
 
         chat_id = ''
         user_id = 0
